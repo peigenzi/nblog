@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue 书写风格 | peigenzi的博客</title>
+    <meta name="description" content="记录生活，记录成长">
+    
+    
+    <link rel="preload" href="/assets/css/styles.2e6e92b1.css" as="style"><link rel="preload" href="/assets/js/app.2e6e92b1.js" as="script"><link rel="preload" href="/assets/js/15.c78345ca.js" as="script"><link rel="prefetch" href="/assets/css/1.styles.dcd057d8.css"><link rel="prefetch" href="/assets/css/2.styles.a2bd3099.css"><link rel="prefetch" href="/assets/js/1.dcd057d8.js"><link rel="prefetch" href="/assets/js/10.76008bc8.js"><link rel="prefetch" href="/assets/js/11.5e2104c9.js"><link rel="prefetch" href="/assets/js/12.18aedf0d.js"><link rel="prefetch" href="/assets/js/13.036e65e0.js"><link rel="prefetch" href="/assets/js/14.3aaee4e9.js"><link rel="prefetch" href="/assets/js/16.fd491451.js"><link rel="prefetch" href="/assets/js/17.a717819b.js"><link rel="prefetch" href="/assets/js/2.a2bd3099.js"><link rel="prefetch" href="/assets/js/3.4826c620.js"><link rel="prefetch" href="/assets/js/4.4e2aabe5.js"><link rel="prefetch" href="/assets/js/5.6b072114.js"><link rel="prefetch" href="/assets/js/6.18913121.js"><link rel="prefetch" href="/assets/js/7.6b565e55.js"><link rel="prefetch" href="/assets/js/8.a8d06b72.js"><link rel="prefetch" href="/assets/js/9.6338223d.js">
+    <link rel="stylesheet" href="/assets/css/1.styles.dcd057d8.css"><link rel="stylesheet" href="/assets/css/2.styles.a2bd3099.css"><link rel="stylesheet" href="/assets/css/styles.2e6e92b1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">peigenzi的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about.html" class="nav-link">关于</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="/about.html" class="nav-link">关于</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading"><span>JavaScript</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/blog/js/监控长任务.html" class="sidebar-link">监测长任务</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>CSS</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/blog/css/bem总结.html" class="sidebar-link">bem 总结</a></li><li><a href="/blog/css/css3动画.html" class="sidebar-link">css3 动画</a></li><li><a href="/blog/css/scss快速上手.html" class="sidebar-link">Scss 快速上手</a></li><li><a href="/blog/css/scss常用函数.html" class="sidebar-link">Scss 常用函数</a></li><li><a href="/blog/css/栅格系统.html" class="sidebar-link">栅格系统</a></li><li><a href="/blog/css/table总结.html" class="sidebar-link">table 总结</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>Vue</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/blog/vue/Vue书写风格.html" class="active sidebar-link">Vue 书写风格</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/vue/Vue书写风格.html#单文件组件文件名称" class="sidebar-link">单文件组件文件名称</a></li><li class="sidebar-sub-header"><a href="/blog/vue/Vue书写风格.html#紧密耦合的组件名" class="sidebar-link">紧密耦合的组件名</a></li><li class="sidebar-sub-header"><a href="/blog/vue/Vue书写风格.html#自闭合组件" class="sidebar-link">自闭合组件</a></li><li class="sidebar-sub-header"><a href="/blog/vue/Vue书写风格.html#prop-名大小写" class="sidebar-link">Prop 名大小写</a></li><li class="sidebar-sub-header"><a href="/blog/vue/Vue书写风格.html#props-换行" class="sidebar-link">Props 换行</a></li><li class="sidebar-sub-header"><a href="/blog/vue/Vue书写风格.html#指令缩写" class="sidebar-link">指令缩写</a></li><li class="sidebar-sub-header"><a href="/blog/vue/Vue书写风格.html#props-顺序" class="sidebar-link">Props 顺序</a></li><li class="sidebar-sub-header"><a href="/blog/vue/Vue书写风格.html#组件选项的顺序" class="sidebar-link">组件选项的顺序</a></li><li class="sidebar-sub-header"><a href="/blog/vue/Vue书写风格.html#组件选项中的空行" class="sidebar-link">组件选项中的空行</a></li></ul></li><li><a href="/blog/vue/可从外部关闭下拉菜单的Vue指令.html" class="sidebar-link">可从外部关闭下拉菜单的 Vue 指令</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>工程化</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/blog/工程化/gulp笔记.html" class="sidebar-link">gulp 笔记</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>性能</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/blog/performance/1使用 RAIL 模型评估性能.html" class="sidebar-link">使用 RAIL 模型评估性能</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="vue-书写风格"><a href="#vue-书写风格" aria-hidden="true" class="header-anchor">#</a> Vue 书写风格</h1> <h2 id="单文件组件文件名称"><a href="#单文件组件文件名称" aria-hidden="true" class="header-anchor">#</a> 单文件组件文件名称</h2> <p>始终用大写单词开头或始终使用横线连接。</p> <div class="language-shell extra-class"><pre class="language-text"><code>// bad
+mycomponent.vue
+myComponent.vue
+
+// good
+my-component.vue
+MyComponent.vue
+</code></pre></div><h2 id="紧密耦合的组件名"><a href="#紧密耦合的组件名" aria-hidden="true" class="header-anchor">#</a> 紧密耦合的组件名</h2> <p>和父组件紧密耦合的子组件应该以父组件名作为前缀命名。</p> <div class="language-shell extra-class"><pre class="language-text"><code>// bad
+components/
+|- TodoList.vue
+|- TodoItem.vue
+└─ TodoButton.vue
+
+// good
+components/
+|- TodoList.vue
+|- TodoListItem.vue
+└─ TodoListItemButton.vue
+</code></pre></div><h2 id="自闭合组件"><a href="#自闭合组件" aria-hidden="true" class="header-anchor">#</a> 自闭合组件</h2> <p>在单文件组件中没有内容的组件应该是自闭合的。</p> <div class="language-shell extra-class"><pre class="language-text"><code>&lt;!-- bad --&gt;
+&lt;my-component&gt;&lt;/my-component&gt;
+
+&lt;!-- good --&gt;
+&lt;my-component /&gt;
+</code></pre></div><h2 id="prop-名大小写"><a href="#prop-名大小写" aria-hidden="true" class="header-anchor">#</a> Prop 名大小写</h2> <p>在声明 prop 的时候，其命名应该始终使用 camelCase，而在模板中应该始终使用 kebab-case。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// bad</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token string">'greeting-text'</span><span class="token punctuation">:</span> String
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment">// good</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    greetingText<span class="token punctuation">:</span> String
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- bad --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>welcome-message</span> <span class="token attr-name">greetingText</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hi<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+<span class="token comment">&lt;!-- good --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>welcome-message</span> <span class="token attr-name">greeting-text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>hi<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+</code></pre></div><h2 id="props-换行"><a href="#props-换行" aria-hidden="true" class="header-anchor">#</a> Props 换行</h2> <p>多个 Props 的元素应该分多行撰写，每个 Props 一行，闭合标签单起一行。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- bad --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span> <span class="token attr-name">foo</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>a<span class="token punctuation">&quot;</span></span> <span class="token attr-name">bar</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>b<span class="token punctuation">&quot;</span></span> <span class="token attr-name">baz</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>c<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+
+<span class="token comment">&lt;!-- good --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span>
+  <span class="token attr-name">foo</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>a<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">bar</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>b<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">baz</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>c<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+</code></pre></div><h2 id="指令缩写"><a href="#指令缩写" aria-hidden="true" class="header-anchor">#</a> 指令缩写</h2> <p>指令缩写，用 <code>:</code> 表示 <code>v-bind:</code> ，用 <code>@</code> 表示 <code>v-on:</code> 。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- bad --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> 
+  <span class="token attr-name"><span class="token namespace">v-bind:</span>value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>value<span class="token punctuation">&quot;</span></span> 
+  <span class="token attr-name"><span class="token namespace">v-on:</span>input</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>onInput<span class="token punctuation">&quot;</span></span> 
+<span class="token punctuation">/&gt;</span></span>
+
+<span class="token comment">&lt;!-- good --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> 
+  <span class="token attr-name">:value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>value<span class="token punctuation">&quot;</span></span> 
+  <span class="token attr-name">@input</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>onInput<span class="token punctuation">&quot;</span></span> 
+<span class="token punctuation">/&gt;</span></span>
+</code></pre></div><h2 id="props-顺序"><a href="#props-顺序" aria-hidden="true" class="header-anchor">#</a> Props 顺序</h2> <p>标签的 Props 应该有统一的顺序，依次为指令、属性和事件。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span>
+  <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>if<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">v-show</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>show<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">v-model</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>value<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">ref</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>ref<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">:key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>key<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">:text</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">@input</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>onInput<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">@change</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>onChange<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">/&gt;</span></span>
+</code></pre></div><h2 id="组件选项的顺序"><a href="#组件选项的顺序" aria-hidden="true" class="header-anchor">#</a> 组件选项的顺序</h2> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+
+  mixins<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+  components<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  props<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  computed<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  watch<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">created</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">mounted</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  <span class="token function">destroyed</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h2 id="组件选项中的空行"><a href="#组件选项中的空行" aria-hidden="true" class="header-anchor">#</a> 组件选项中的空行</h2> <p>组件选项较多时，建议在属性之间添加空行。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  computed<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">formattedValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token function">styles</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  methods<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    <span class="token function">onInput</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token function">onChange</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// ...</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/15.c78345ca.js" defer></script><script src="/assets/js/app.2e6e92b1.js" defer></script>
+  </body>
+</html>
